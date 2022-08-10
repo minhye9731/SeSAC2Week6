@@ -43,6 +43,13 @@ class CardView: UIView {
         view.frame = bounds
         view.backgroundColor = .lightGray
         self.addSubview(view)
+        
+        // 카드뷰를 인터페이스 빌더 기반으로 만들고, 레이아웃도 설정했는데 false가 아닌 true로 나온다...
+        // true. 오토레이아웃 적용이 되는 관점보다 오토리사이징 내부적으로 constraints 처리가 됨...
+        print(view.translatesAutoresizingMaskIntoConstraints)
+        // view의 레이아웃은 인터페이스 기반으로 ui로 잡아줬더라도
+        // nib형태로 view를 등록하고, addsubview를 통해 화면에 등록을 해줬기 때문에 true로 나온다.
+        // 이미지, 버튼, 레이블 등은 인터페이스 기반으로 Ui가 잘 잡혔지만, view자체는 레이아웃이 별도로 잡혀있는게 아니어서 오토리사이징 true처리가 됨.
     }
     
 }

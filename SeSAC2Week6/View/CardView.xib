@@ -25,10 +25,10 @@
                     <rect key="frame" x="8" y="8" width="315" height="310"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="akg-pf-3lI">
-                    <rect key="frame" x="275" y="8" width="48" height="48"/>
+                    <rect key="frame" x="295" y="12" width="24" height="24"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="48" id="Jqp-WE-DnU"/>
-                        <constraint firstAttribute="height" constant="48" id="elr-ad-NYg"/>
+                        <constraint firstAttribute="width" constant="24" id="Jqp-WE-DnU"/>
+                        <constraint firstAttribute="height" constant="24" id="elr-ad-NYg"/>
                     </constraints>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                     <state key="normal">
@@ -37,7 +37,7 @@
                     </state>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzy-C6-cJe">
-                    <rect key="frame" x="178" y="138" width="0.0" height="0.0"/>
+                    <rect key="frame" x="145" y="153" width="41.5" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -45,17 +45,17 @@
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="akg-pf-3lI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="A5h-WT-Rl5"/>
+                <constraint firstItem="akg-pf-3lI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="A5h-WT-Rl5"/>
                 <constraint firstAttribute="bottom" secondItem="JHu-zQ-prp" secondAttribute="bottom" constant="8" id="Gv1-Kt-fhT"/>
                 <constraint firstItem="JHu-zQ-prp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="LqJ-mS-ZZ6"/>
                 <constraint firstItem="pzy-C6-cJe" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="PD0-rV-1Fu"/>
                 <constraint firstItem="JHu-zQ-prp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="Wh5-Bf-Z5i"/>
                 <constraint firstAttribute="trailing" secondItem="JHu-zQ-prp" secondAttribute="trailing" constant="8" id="Yg4-Ij-A9I"/>
                 <constraint firstItem="pzy-C6-cJe" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="bJ9-gF-7hM"/>
-                <constraint firstAttribute="trailing" secondItem="akg-pf-3lI" secondAttribute="trailing" constant="8" id="oIS-9t-S4k"/>
+                <constraint firstAttribute="trailing" secondItem="akg-pf-3lI" secondAttribute="trailing" constant="12" id="oIS-9t-S4k"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="71.739130434782609" y="-84.375"/>
+            <point key="canvasLocation" x="72" y="-88"/>
         </view>
     </objects>
     <resources>
