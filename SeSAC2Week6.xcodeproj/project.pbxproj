@@ -22,7 +22,11 @@
 		0E4A95F428A0951500FA3ACC /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4A95F328A0951500FA3ACC /* URL+Extension.swift */; };
 		0E4A95F628A0A7A900FA3ACC /* KakaoAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4A95F528A0A7A900FA3ACC /* KakaoAPIManager.swift */; };
 		0E4A95F828A0AC0F00FA3ACC /* ClosureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4A95F728A0AC0F00FA3ACC /* ClosureViewController.swift */; };
+		0E50602E28A773ED008814EE /* Button+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E50602D28A773ED008814EE /* Button+Extensions.swift */; };
 		0E5F554B28A343DF006EA253 /* TMDBAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5F554A28A343DF006EA253 /* TMDBAPIManager.swift */; };
+		0E61757A28A4939700A2A792 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E61757928A4939700A2A792 /* MapViewController.swift */; };
+		0E67B81328A5D6D500766552 /* YPImagePicker in Frameworks */ = {isa = PBXBuildFile; productRef = 0E67B81228A5D6D500766552 /* YPImagePicker */; };
+		0E67B81528A5DD2600766552 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E67B81428A5DD2600766552 /* CameraViewController.swift */; };
 		0EF3854728A1E031005BBA0A /* SeSACButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF3854628A1E031005BBA0A /* SeSACButton.swift */; };
 		0EF3854928A1E604005BBA0A /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EF3854828A1E604005BBA0A /* CardView.xib */; };
 		0EF3854B28A1E653005BBA0A /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF3854A28A1E652005BBA0A /* CardView.swift */; };
@@ -47,7 +51,10 @@
 		0E4A95F328A0951500FA3ACC /* URL+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
 		0E4A95F528A0A7A900FA3ACC /* KakaoAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoAPIManager.swift; sourceTree = "<group>"; };
 		0E4A95F728A0AC0F00FA3ACC /* ClosureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureViewController.swift; sourceTree = "<group>"; };
+		0E50602D28A773ED008814EE /* Button+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+Extensions.swift"; sourceTree = "<group>"; };
 		0E5F554A28A343DF006EA253 /* TMDBAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBAPIManager.swift; sourceTree = "<group>"; };
+		0E61757928A4939700A2A792 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		0E67B81428A5DD2600766552 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		0EF3854628A1E031005BBA0A /* SeSACButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeSACButton.swift; sourceTree = "<group>"; };
 		0EF3854828A1E604005BBA0A /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
 		0EF3854A28A1E652005BBA0A /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -65,6 +72,7 @@
 				0E4A95EB28A0903A00FA3ACC /* SwiftyJSON in Frameworks */,
 				0E4A95E828A0902A00FA3ACC /* Kingfisher in Frameworks */,
 				0E4A95E528A0901E00FA3ACC /* Alamofire in Frameworks */,
+				0E67B81328A5D6D500766552 /* YPImagePicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,13 +99,16 @@
 		0E4A95CE28A08FF000FA3ACC /* SeSAC2Week6 */ = {
 			isa = PBXGroup;
 			children = (
+				0E50602C28A773B3008814EE /* Extensions */,
 				0EF3854528A1DFE7005BBA0A /* View */,
 				0E4A95F228A094A500FA3ACC /* Network */,
 				0E4A95CF28A08FF000FA3ACC /* AppDelegate.swift */,
 				0E4A95D128A08FF000FA3ACC /* SceneDelegate.swift */,
 				0E4A95D328A08FF000FA3ACC /* ViewController.swift */,
-				0EF3855028A1F637005BBA0A /* MainViewController.swift */,
 				0E4A95F728A0AC0F00FA3ACC /* ClosureViewController.swift */,
+				0EF3855028A1F637005BBA0A /* MainViewController.swift */,
+				0E61757928A4939700A2A792 /* MapViewController.swift */,
+				0E67B81428A5DD2600766552 /* CameraViewController.swift */,
 				0E4A95D528A08FF000FA3ACC /* Main.storyboard */,
 				0E4A95D828A08FF200FA3ACC /* Assets.xcassets */,
 				0E4A95DA28A08FF200FA3ACC /* LaunchScreen.storyboard */,
@@ -111,11 +122,19 @@
 			isa = PBXGroup;
 			children = (
 				0E4A95F028A0949F00FA3ACC /* Endpoint.swift */,
-				0E4A95F328A0951500FA3ACC /* URL+Extension.swift */,
 				0E4A95F528A0A7A900FA3ACC /* KakaoAPIManager.swift */,
 				0E5F554A28A343DF006EA253 /* TMDBAPIManager.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		0E50602C28A773B3008814EE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0E4A95F328A0951500FA3ACC /* URL+Extension.swift */,
+				0E50602D28A773ED008814EE /* Button+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		0EF3854528A1DFE7005BBA0A /* View */ = {
@@ -151,6 +170,7 @@
 				0E4A95E428A0901E00FA3ACC /* Alamofire */,
 				0E4A95E728A0902A00FA3ACC /* Kingfisher */,
 				0E4A95EA28A0903A00FA3ACC /* SwiftyJSON */,
+				0E67B81228A5D6D500766552 /* YPImagePicker */,
 			);
 			productName = SeSAC2Week6;
 			productReference = 0E4A95CC28A08FF000FA3ACC /* SeSAC2Week6.app */;
@@ -184,6 +204,7 @@
 				0E4A95E328A0901E00FA3ACC /* XCRemoteSwiftPackageReference "Alamofire" */,
 				0E4A95E628A0902A00FA3ACC /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				0E4A95E928A0903A00FA3ACC /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				0E67B81128A5D6D500766552 /* XCRemoteSwiftPackageReference "YPImagePicker" */,
 			);
 			productRefGroup = 0E4A95CD28A08FF000FA3ACC /* Products */;
 			projectDirPath = "";
@@ -216,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EF3855328A1FC30005BBA0A /* MainTableViewCell.swift in Sources */,
+				0E50602E28A773ED008814EE /* Button+Extensions.swift in Sources */,
 				0E4A95D428A08FF000FA3ACC /* ViewController.swift in Sources */,
 				0E4A95D028A08FF000FA3ACC /* AppDelegate.swift in Sources */,
 				0E4A95F828A0AC0F00FA3ACC /* ClosureViewController.swift in Sources */,
@@ -228,6 +250,8 @@
 				0EF3854728A1E031005BBA0A /* SeSACButton.swift in Sources */,
 				0E4A95F628A0A7A900FA3ACC /* KakaoAPIManager.swift in Sources */,
 				0E4A95F128A0949F00FA3ACC /* Endpoint.swift in Sources */,
+				0E67B81528A5DD2600766552 /* CameraViewController.swift in Sources */,
+				0E61757A28A4939700A2A792 /* MapViewController.swift in Sources */,
 				0E4A95F428A0951500FA3ACC /* URL+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,7 +407,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -412,7 +436,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -474,6 +498,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		0E67B81128A5D6D500766552 /* XCRemoteSwiftPackageReference "YPImagePicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Yummypets/YPImagePicker.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -491,6 +523,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0E4A95E928A0903A00FA3ACC /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
 			productName = SwiftyJSON;
+		};
+		0E67B81228A5D6D500766552 /* YPImagePicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E67B81128A5D6D500766552 /* XCRemoteSwiftPackageReference "YPImagePicker" */;
+			productName = YPImagePicker;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

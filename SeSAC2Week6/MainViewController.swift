@@ -65,8 +65,6 @@ class MainViewController: UIViewController {
         bannerCollectionView.collectionViewLayout = collectionViewLayout()
         bannerCollectionView.isPagingEnabled = true //  device width
         
-        
-        
         TMDBAPIManager.shared.requestImage { value in
             dump(value)
             //1. 네트워크 통신 2.배열 생성 3. 배열 담기
@@ -120,8 +118,6 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
 //        return indexPath.section == 3 ? 350 : 190
         return 240
     }
-    
-    
 }
 
 // 하나의 프로토콜, 메서드에서 여러 컬렉션뷰의 delegate, datasource 구현해야 함
